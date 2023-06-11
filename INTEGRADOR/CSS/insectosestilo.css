@@ -9,8 +9,8 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     line-height: 20px;
-    width: 100%;
-    margin: 0 auto;
+    /* width: 100%; */
+    position: relative;
     padding-bottom: 3em;
     margin: 0;
     min-height: 100vh;
@@ -48,6 +48,8 @@ header h1 {
     
 } 
 
+
+
  nav {
     background-color: #975785;
     margin-bottom: 20px;
@@ -78,6 +80,49 @@ nav ul li a:hover {
     background-color: #d299c2;
 }
 
+/* --------------------------------------------------PALABRAS ANIMADAS */
+.contenedor2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor__texto {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    z-index: 1;
+}
+
+.palabras {
+    margin-right: 8px;
+}
+
+.contenedor__texto__animacion {
+    display: flex;
+}
+
+.barra__escritura {
+    width: 2px;
+    height: 20px;
+    margin-left: 5px;
+    background-color: #181818;
+    transform: rotateZ(10deg);
+    animation: barra-animacion 1s ease infinite;
+    
+}
+
+
+/* Barra */
+
+@keyframes barra-animacion {
+    50% {
+        height: 20px;
+    }
+}
+
+/* -----------------------------------------------------------------FIN PALABRA ANIMADA */
+
+
 footer {
     background-color: grey;
     color: black;
@@ -91,8 +136,9 @@ footer {
 .contenedor {
     max-width: 960px;
     margin: 0 auto;
-
+    padding-bottom: 70px;
 }
+
 
 nav ul li a.activo {
     background-color: #6d4f64;
@@ -232,6 +278,8 @@ main h2 {
 
 
 }
+
+
 
 
 /* SITIO RESPONSIVO --------------------------------------------------------------------------------------*/
